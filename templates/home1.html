@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible", content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> 
+    <script src="https://kit.fontawesome.com/6b6a557c25.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="#" class="logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#serivces">Blogs</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                </ul>
+           </nav> 
+           <div class="header-text">
+            <h4> Welcome</h4>
+            <h1><span>AGRI</span> Hospital</h1><br>
+            <h3> <span>AI</span> in  Plant Disease Diagnosis<h3>
+            <a href="#contact" class="btn">Diagnos</a> 
+           </div>
+       </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1"> 
+                    <img src="static/img/Agriculture-development.jpg">
+                </div>
+                <div class="about-col-2">
+                <h1 class="sub_title">About Me</h1>
+                <p></p>
+                   
+                    
+                </div>
+
+<!-- ---Serivces -->
+<div id="serivces">
+    <div class="container">
+        <h1 class="sub-title">Serivces</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-airbnb"></i>
+                <h2>How to Handle the Las files</h2>
+                <p> A LAS file is an industry-standard binary format for storing airborne lidar data. The LAS dataset allows you to examine LAS files, in their native format, quickly and easily, providing detailed statistics and area coverage of the lidar data contained in the LAS files.</p>
+                <a href="https://medium.com/@sanketbodake2020/read-the-las-files-ca5d04925641">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-industry"></i>
+                <h2> Bussiness Intelegance</h2>
+                <p> Any Bussiness problem solving using AI</p>
+                <a href="#">Learn more</a>
+                           </div>
+            <div>
+                <i class="fa-solid fa-cloud"></i>
+                <h2> Cloud Services</h2>
+                <p> Any Bussiness problem solving using AI</p>
+                <a href="#">Learn more</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- portfolio-->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title"> My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="img/multi language.png">
+                <div class="layer">
+                    <h3>Online Language Detector</h3>
+                    <p>We are predicting the house price</p>
+                    <a href="https://brown-pharmacist-fofpd.ineuron.app:8000/predict"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="img/Lumpy-Skin.jpg">
+                <div class="layer">
+                    <h3>Cow Lumpy Detection</h3>
+                    <p> This is a simple Deep Learning Mock Project. In this healthy and lumpy Disease cow 
+                        images were collected over the internet and Trained the CNN model. 
+                        Just pass the  Animal image to analyze whether it is lumpy or not.</p>
+                    <a href="https://github.com/S-a-n-k-e-t-1998/Cow-Lumpy-Prediction-CNN" target=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    
+                </div>
+                </div>
+                <div class="work">
+                    <img src="img/auto-ml.jpg">
+                    <div class="layer">
+                        <h3>Auto ML</h3>
+                        <p>In this pass the csv file and get the trained model.</p>
+                        <a href="https://github.com/S-a-n-k-e-t-1998/AutoMl"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+            </div>
+        </div>
+        <a href="https://github.com/S-a-n-k-e-t-1998?tab=repositories" class="btn">See more</a>
+    </div>
+</div>
+<!-- Contact ------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> sanketbodake2020@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 9860748568</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/S-a-n-k-e-t-1998"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href=""  class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+            <form >
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+        </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright @ sanket. Made with <i class="fa-solid fa-heart"></i> by Sanket Bodake</p>
+    </div>
+</div>
+<script>
+var tablinks=document.getElementsByClassName("tab-links");
+var tabcontents=document.getElementsByClassName("tab-contents");
+function opentab(tabname){
+for(tablink of tablinks){
+tablink.classList.remove("active-link");
+}
+for(tabcontent of tabcontents){
+    tabcontent.classList.remove("active-tab");
+}
+event.currentTarget.classList.add("active-link");
+document.getElementById(tabname).classList.add("active-tab")
+}
+</script>
+</body>
+</html>

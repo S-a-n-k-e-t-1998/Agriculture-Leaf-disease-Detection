@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible", content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agriculture Website</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style2.css') }}"> 
+    <script src="https://kit.fontawesome.com/6b6a557c25.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/pngegg.png') }}" type="img/x-icon" />
+	<link rel="shortcut icon" href="{{ url_for('static', filename='img/pngegg.png') }}" />
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="{{ url_for('static', filename='img/pngegg.png') }}" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#serivces">Products</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+           </nav> 
+           <div class="header-text">
+            <h1><span>Welcome</span> Farmers</h1>
+            <h3>We are dedicated to providing information <br>and resources for farmers and gardeners.<h3>
+                <a href="potato_home"  class="btn btn1">Potato</a>
+           </div>
+    </div>
+</div>
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1"> 
+                <img src="{{ url_for('static', filename='img/pngegg.png') }}">
+            </div>
+            <div class="about-col-2">
+            <h1 class="sub_title">About Me</h1>
+            <p>&nbsp;&nbsp;&nbsp;Motivated Data Scientist with 2.4+ years of experience with a diverse
+                clientele, now seeking a challenging position to utilize my skills and
+                abilities that offers Professional & Organizational growth, while being
+                resourceful and innovative. I work primarily in the Real estate and
+                Healthcare domain. Has expertise in preparing and preprocessing
+                data, deriving useful insights from data, and developing, and
+                deploying highly scalable machine learning models.</p>
+
+            <div class="tab-title">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                <div class="services-list">
+                    <div style="margin-top:-10px;">
+                    <li style="margin-top:-30px; margin-bottom:-30px;color: rgb(247, 242, 242);">
+                        <span style="color: rgb(36, 3, 3); font-weight: 100;margin-left:-30px; font-weight: bold;">Machine Learning Techniques</span><br>
+                        <br >1. Linear Regression<br>2. Logistic Regression<br>3. Random Forest<br>4. Decision Trees
+                        5. AdaBoost <br>6. k-NN <br>7. K-Mean Clustering<br>8. Nb Classifier<br>9. L & R Regression<br>10. SVM</li>
+                        </div>
+                        <div style="margin-top:-10px ;">
+                            <li style="margin-top:-30px; margin-bottom:-30px; color: rgb(247, 242, 242);">
+                                <span style="color: rgb(36, 3, 3); font-weight: 100;margin-left:-30px; font-weight: bold;">Deep Learning Techniques</span><br>
+                                <br>1. ANN <br>2. CNN <br>3. RNN <br>4. LSTM
+                            <br>5. GRU<br>6. BERT</li>
+                        </div>
+                        <div style="margin-top:-10px ;">
+                            <li style="margin-top:-30px;margin-bottom:-30px; color: rgb(247, 242, 242);">
+                                <span style="color: rgb(36, 3, 3); font-weight: 100;margin-left:-30px; font-weight: bold;">Programming Languages</span><br>
+                                <br>1. Python<br>2. SQL<br>3. Flask</li>
+                        </div>
+                        <div style="margin-top:-10px ;">
+                            <li style="margin-top:-30px; margin-bottom:-30px;color: rgb(247, 242, 242);">
+                                <span style="color: rgb(36, 3, 3); font-weight: 100;margin-left:-30px; font-weight: bold;">Database/Cloud Platforms/Others</span><br>
+                                <br>1. MySQL<br>2. AWS Redshift<br>3. MSSQL<br>4. GitHub<br>5. Docker</li>
+                        </div>
+                </div>   
+                </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>July 2022 - Current</span><br>ABC<br>Data Scientist</li>
+                    <li><span>June 2020 - July 2022</span><br> JavaGuild<br>Data Analyst</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>Bachelor of Engineering</span><br>Pune University<br>2016-2020</li>
+                    <li><span>HSC</span><br> G.R.P. S.Narayangaon</li>
+                    <li><span>SSC</span><br> Shree. V. V,Ozar</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+<!-- ---services -->
+<div id="serivces">
+    <div class="container">
+        <h1 class="sub-title">My Blogs</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-airbnb"></i>
+                <h2>How to Handle the Las files</h2>
+                <p> A LAS file is an industry-standard binary format for storing airborne lidar data. The LAS dataset allows you to examine LAS files, in their native format, quickly and easily, providing detailed statistics and area coverage of the lidar data contained in the LAS files.</p>
+                <a href="https://medium.com/@sanketbodake2020/read-the-las-files-ca5d04925641">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-industry"></i>
+                <h2> Linear Regression</h2>
+                <p> Linear Regression is the statistical technique to find the relationship between two or more variables. We can use linear regression to predict the target values based on the independent variables values. If the target variable continues then we can use linear regression.
+                </p>
+                <a href="https://medium.com/@sanketbodake2020/linear-regression-d35a2ad6d7be">Learn more</a>
+                           </div>
+            <div>
+                <i class="fa-solid fa-cloud"></i>
+                <h2> Cloud Services</h2>
+                <p> Any Bussiness problem solving using AI</p>
+                <a href="#">Learn more</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- portfolio-->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title"> My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="img/multi language.png">
+                <div class="layer">
+                    <h3>Online Language Detector</h3>
+                    <p>This is language Detector trained over the 20 Languages.</p>
+                    <a href="https://brown-pharmacist-fofpd.ineuron.app:8000/predict"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="img/Lumpy-Skin.jpg">
+                <div class="layer">
+                    <h3>Cow Lumpy Detection</h3>
+                    <p> This is a simple Deep Learning Mock Project. In this healthy and lumpy Disease cow 
+                        images collected and Trained the CNN model. </p>
+                    <a href="https://github.com/S-a-n-k-e-t-1998/Cow-Lumpy-Prediction-CNN" target=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    
+                </div>
+                </div>
+                <div class="work">
+                    <img src="img/auto-ml.jpg">
+                    <div class="layer">
+                        <h3>Auto ML</h3>
+                        <p>In this pass the csv file and get the trained model.</p>
+                        <a href="https://github.com/S-a-n-k-e-t-1998/AutoMl"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+            </div>
+        </div>
+        <a href="https://github.com/S-a-n-k-e-t-1998?tab=repositories" class="btn">See more</a>
+    </div>
+</div>
+<!-- Contact ------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> sanketbodake2020@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 9860748568</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/S-a-n-k-e-t-1998"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href=""  class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+            <form action="contact_me.php" method="post">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                <button type="submit"  class="btn btn2">Submit</button>
+            </form>
+        </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright @ sanket. Made with <i class="fa-solid fa-heart"></i> by Sanket Bodake</p>
+    </div>
+</div>
+<script>
+var tablinks=document.getElementsByClassName("tab-links");
+var tabcontents=document.getElementsByClassName("tab-contents");
+function opentab(tabname){
+for(tablink of tablinks){
+tablink.classList.remove("active-link");
+}
+for(tabcontent of tabcontents){
+    tabcontent.classList.remove("active-tab");
+}
+event.currentTarget.classList.add("active-link");
+document.getElementById(tabname).classList.add("active-tab")
+}
+</script>
+<script>
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+                            sidemenu.style.right="0";
+                        }
+    function closemenu(){
+                        sidemenu.style.right="-200px";
+                    }
+
+</script> 
+</body>
+</html>
