@@ -1,0 +1,9 @@
+
+potato_class_names : ['Early_blight', 'Late_blight', 'healthy']
+
+UPLOAD_FOLDER :  'e:\\Deep Learning CNN\\Agri\\application\\static\\staticFiles\\uploads'
+
+potato_model : "models\potato_model.h5"
+
+paper_model : "models\Pepper_bell_model.h5"
+
